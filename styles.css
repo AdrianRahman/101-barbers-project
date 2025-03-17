@@ -1,0 +1,241 @@
+body {
+  background-color:#000000;
+  text-align: center
+}
+
+.topnav {
+  background-color: black;
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+  padding: 20px 20px;
+  
+}
+ 
+
+.topnav a {
+  color: gold;
+  text-decoration: none;
+  font-size: 70px;
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.topnav a.active {
+  color: rgb(255, 255, 255);
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+.logo {
+  height: 90px; 
+  width: auto;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.topnav a {
+  color: gold;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+
+.book-now {
+  background-color: gold; 
+  color: rgb(0, 0, 0) !important; 
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Raleway', serif;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.book-now:hover {
+  background-color: rgb(170, 150, 41);
+  color: rgb(255, 255, 255) !important; 
+}
+
+body, html {
+  height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("barbershop3.jpg");
+
+
+height: 100%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+text-decoration: none;
+font-size: 20px;
+font-family: 'Raleway', serif;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.logo-section {
+  text-align: center;
+}
+
+.logo {
+  height: auto;
+  width: 80px; /* Adjust size as needed */
+}
+
+.social-media p {
+  margin: 5px 0;
+}
+
+.icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  background-color: #caa03f;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+background: #bba620;
+color: white;
+}
+.fa-instagram {
+background: #bba620;
+color: white;
+} 
+
+h1, h2 {
+  color: white;
+}
+form {
+  
+  max-width: 400px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: gold; 
+  color: black; 
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #b8860b; 
+  color: white; 
+}
