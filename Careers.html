@@ -1,45 +1,92 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="101barbers.png">
+<title>Careers - 101 Barbers</title>
 </head>
 <body>
   <div class="topnav">
-    <a href="101barbers.html"><img class="logo" src="101barbers.jpg" alt="HomePage"></a>
-    <a href="101barbers.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Services.html">Services</a>
-    <a href="Reviews.html">Reviews</a>
-    <a href="Gallery.html">Gallery</a>
-    <a href="Careers.html" class="active">Careers</a>
-    <a href="Barbers.html">Barbers</a>
-    <a href="Book Now.html" class="book-now">Book Now</a>
-</div>
+    <div class="top-row">
+      <a href="101barbers.html"><img class="logo" src="101barbers.png" alt="HomePage"></a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="101barbers.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Careers.html" class="active">Careers</a>
+      <a href="Barbers.html">Barbers</a>
+      <a href="Book Now.html" class="book-now">Book Now</a>
+    </div>
+  </div>
+
 </body>
-</html>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop Careers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+  
+  <div class="hero-image2">
+    <div class="hero-text2">
+      <h1>101 BARBERS CAREERS</h1>
+      <h2>WE ARE HIRING | Join The Team</h2>
+      <p>Are you interested in joining the team at 101 Barbers? Please fill in the form below to apply now!</p>
 
-    <h1>BARBERSHOP CAREERS</h1>
-    <h2>WE ARE HIRING | Join The Team</h2>
-
-    <form id="jobApplicationForm">
-        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-        <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required pattern="[0-9]{10,15}">
-        <input type="text" id="socialHandle" name="socialHandle" placeholder="Instagram or Facebook Handle" required>
-        <input type="number" id="experience" name="experience" placeholder="Years of Experience" min="0" required>
+      <form id="jobApplicationForm">
+        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required pattern="[0-9]{5,15}" />
+        <input type="text" id="socialHandle" name="socialHandle" placeholder="Instagram or Facebook Handle" required />
+        <input type="number" id="experience" name="experience" placeholder="Years of Experience" min="1" required />
         <button type="submit">Submit</button>
-    </form>
+      </form>
 
+      <p id="successMessage" class="hidden">Your submission was successful, thanks for applying.</p>
+    </div>
+  </div>
+
+  <!-- Why Work at 101 Section -->
+  <section class="why-careers">
+    <h1>Why Choose a Career at 101 Barbers?</h1>
+    <p>
+      Working at 101 Barbers is a solid opportunity for anyone serious about a career in barbering.
+      Located in Macquarie Fields, our shop has built a strong reputation in the local community for
+      quality haircuts, affordable pricing, and reliable service. We have a steady flow of loyal customers,
+      meaning barbers here can maintain a consistent schedule and income. Our team is supportive, respectful,
+      and focused on delivering the best results for every client. At 101 Barbers, you’ll work in a clean,
+      professional environment with other barbers who take pride in their craft. We value skill, reliability,
+      and a good attitude — and we offer a space where you can grow your experience and reputation in the industry.
+      If you’re looking for a dependable job at a busy, well-known shop, 101 Barbers is a great place to build your future.
+    </p>
+  </section>
+</body>
+<body>
+  <footer>
+    <div class="footer-content">
+      <div class="logo-section">
+        <img src="101barbers.png" alt="Company Logo" class="logo2">
+      </div>
+      <div class="social-media">
+        <h1>Connect With Us on Social Media</h1>
+        <p>Find Us Here:</p>
+        <div class="icons">
+          <a href="https://www.facebook.com/profile.php?id=100063764222246" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/101barbers.a/" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Powered by Adrian Rahman</p>
+      <p><a href="#">Privacy Policy</a></p>
+      <p>All Rights Reserved © 2025</p>
+    </div>
+  </footer>
+  <script src="javascript.js"></script>
 </body>
 </html>

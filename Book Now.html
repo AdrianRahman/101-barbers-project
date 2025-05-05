@@ -1,37 +1,111 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="101barbers.png">
+<title>Book Now - 101 Barbers</title>
 </head>
 <body>
   <div class="topnav">
-    <a href="101barbers.html"><img class="logo" src="101barbers.jpg" alt="HomePage"></a>
-    <a href="101barbers.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Services.html">Services</a>
-    <a href="Reviews.html">Reviews</a>
-    <a href="Gallery.html">Gallery</a>
-    <a href="Careers.html">Careers</a>
-    <a href="Barbers.html">Barbers</a>
-    <a href="Book Now.html" class="book-now" class="active">Book Now</a>
-</div>
+    <div class="top-row">
+      <a href="101barbers.html"><img class="logo" src="101barbers.png" alt="HomePage"></a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="101barbers.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Careers.html">Careers</a>
+      <a href="Barbers.html">Barbers</a>
+      <a href="Book Now.html" class="book-now" class="active">Book Now</a>
+    </div>
+  </div>
+</body>
+
+<body>
+  <div class="booking-hero">
+    <div class="hero-booking-overlay">
+    <div class="hero-booking-text">
+      <h1>Book Your Spot at 101 Barbers</h1>
+      <p>Why wait? Book your appointment now and skip the line! At 101 Barbers, we value your time—secure your spot with your preferred barber and walk in with confidence. No more waiting around!</p>
+    </div>
+    <form id="bookingForm" class="booking-form">
+    <h2>Book Your Appointment</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"  required pattern="[0-9]{5,15}">
+
+    <label for="service">Select Service</label>
+    <select id="service" name="service" required>
+      <option value="">-- Choose a Service --</option>
+      <option value="Haircut">Haircut</option>
+      <option value="Fade">Fade</option>
+      <option value="Beard Trim">Beard Trim</option>
+      <option value="Facial">Facial</option>
+      <option value="Hair colouring">Hair Colouring</option>
+      <option value="Haircut + Beard">Haircut + Beard</option>
+      <option value="Haircut + Design">Haircut + Design</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Preferred Time</label>
+    <input type="time" id="time" name="time" placeholder="Choose a time" required min="08:00" max="19:00">
+
+    <label for="barber">Preferred Barber</label>
+    <select id="barber" name="barber">
+      <option value="">-- Choose a Barber --</option>
+      <option value="No Preference">No Preference</option>
+      <option value="Ahmad Karim">Ahmad Karim</option>
+      <option value="Mark Grayson">Mark Grayson</option>
+      <option value="Tyron Davis">Tyron Davis</option>
+    </select>
+
+    <label for="notes">Additional Notes (optional)</label>
+    <textarea id="notes" name="notes" rows="4" placeholder="Any special requests..."></textarea>
+
+    <button type="submit">Book Now</button>
+  </form>
+  <p id="successmessagebooking" class="hidden">Your booking was successfully submitted!</p>
+  </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo-section">
+        <img src="101barbers.png" alt="Company Logo" class="logo2">
+      </div>
+      <div class="social-media">
+        <h1>Connect With Us on Social Media</h1>
+        <p>Find Us Here:</p>
+        <div class="icons">
+          <a href="https://www.facebook.com/profile.php?id=100063764222246" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/101barbers.a/" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Powered by Adrian Rahman</p>
+      <p><a href="#">Privacy Policy</a></p>
+      <p>All Rights Reserved © 2025</p>
+    </div>
+  </footer>
+  <script src="javascript.js"></script>
+
 </body>
 </html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-</script>
-</head>
-<body>
 
 
 

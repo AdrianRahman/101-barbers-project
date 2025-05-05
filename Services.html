@@ -1,19 +1,118 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="101barbers.png">
+<title>Services - 101 Barbers</title>
 </head>
 <body>
   <div class="topnav">
-    <a href="101barbers.html"><img class="logo" src="101barbers.jpg" alt="HomePage"></a>
-    <a href="101barbers.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Services.html" class="active">Services</a>
-    <a href="Reviews.html">Reviews</a>
-    <a href="Gallery.html">Gallery</a>
-    <a href="Careers.html">Careers</a>
-    <a href="Barbers.html">Barbers</a>
-    <a href="Book Now.html" class="book-now">Book Now</a>
+    <div class="top-row">
+      <a href="101barbers.html"><img class="logo" src="101barbers.png" alt="HomePage"></a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="101barbers.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Services.html" class="active">Services</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Careers.html">Careers</a>
+      <a href="Barbers.html">Barbers</a>
+      <a href="Book Now.html" class="book-now">Book Now</a>
+    </div>
+  </div>
+
+
+
+<div class="hero-image3">
+  <div class="hero-text3">
+    <h1>Our Services</h1>
+    <p>Professional haircuts, beard trims, facials and more at affordable prices.</p>
+    <a href="Book Now.html" class="hero-button3">Book Now</a>
+  </div>
 </div>
+</div>
+</div>
+
+<section class="services-section">
+  <div class="service-container">
+    <img src="haircutting5.png" alt="Hair Cuts" class="service-image">
+    <div class="overlay">Hair Cuts</div>
+  </div>
+  <div class="service-container">
+    <img src="101shaving.png" alt="Beard Shaves" class="service-image">
+    <div class="overlay">Beard Shaves</div>
+  </div>
+  <div class="service-container">
+    <img src="facial3.png" alt="Facials" class="service-image">
+    <div class="overlay">Facials</div>
+  </div>
+  <div class="service-container">
+    <img src="colouring101.png" alt="Colouring" class="service-image">
+    <div class="overlay">Colouring</div>
+  </div>
+</section>
+<section>
+    <div class="services-container2">
+      <h1>All Services</h1>
+      
+      <!-- Search Bar -->
+      <div class="search-container2">
+        <input type="text" id="searchBar2" placeholder="Search services..." autocomplete="off">
+        <div id="suggestions" class="suggestions hidden"></div>
+      </div>
+  
+      <!-- Services Grid -->
+      <div class="services-grid2" id="servicesGrid2">
+        <!-- Cards will be inserted here by JavaScript -->
+      </div>
+    </div>
+  
+
+</section>
+<section class="price-list-section">
+  <h3 class="price-title">In-store Price List</h3>
+  <ul class="price-list">
+    <li><span>Men's Haircut</span><span class="price">$25</span></li>
+    <li><span>Kids</span><span class="price">$20</span></li>
+    <li><span>Pensioner's</span><span class="price">$20</span></li>
+    <li><span>High School</span><span class="price">$23</span></li>
+    <li><span>Beard's</span><span class="price">From $20</span></li>
+    <li><span>Head Shave</span><span class="price">$25</span></li>
+    <li><span>Colour</span><span class="price">$30</span></li>
+    <li><span>Skin Fade</span><span class="price">$30</span></li>
+    <li><span>Flat Top</span><span class="price">$30</span></li>
+    <li><span>Crew Cut</span><span class="price">$20</span></li>
+    <li><span>Wash & Shampoo</span><span class="price">$10</span></li>
+    <li><span>Facial</span><span class="price">$40</span></li>
+    <li><span>Haircut + Beard</span><span class="price">$40</span></li>
+  </ul>
+</section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo-section">
+        <img src="101barbers.png" alt="Company Logo" class="logo2">
+      </div>
+      <div class="social-media">
+        <h1>Connect With Us on Social Media</h1>
+        <p>Find Us Here:</p>
+        <div class="icons">
+          <a href="https://www.facebook.com/profile.php?id=100063764222246" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/101barbers.a/" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Powered by Adrian Rahman</p>
+      <p><a href="#">Privacy Policy</a></p>
+      <p>All Rights Reserved © 2025</p>
+    </div>
+  </footer>
+  <script src="javascript.js"></script>
 </body>
 </html>

@@ -1,25 +1,117 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="101barbers.png">
+<title>Gallery - 101 Barbers</title>
 </head>
 <body>
   <div class="topnav">
-    <a href="101barbers.html"><img class="logo" src="101barbers.jpg" alt="HomePage"></a>
-    <a href="101barbers.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Services.html">Services</a>
-    <a href="Reviews.html">Reviews</a>
-    <a href="Gallery.html" class="active">Gallery</a>
-    <a href="Careers.html">Careers</a>
-    <a href="Barbers.html">Barbers</a>
-    <a href="Book Now.html" class="book-now">Book Now</a>
+    <div class="top-row">
+      <a href="101barbers.html"><img class="logo" src="101barbers.png" alt="HomePage"></a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="101barbers.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Gallery.html" class="active">Gallery</a>
+      <a href="Careers.html">Careers</a>
+      <a href="Barbers.html">Barbers</a>
+      <a href="Book Now.html" class="book-now">Book Now</a>
+    </div>
+  </div>
+</body>
+
+</body>
+<h1 class="testimonial-title">Videos</h1>
+<div class="decor">
+  <span>◆</span><span>◆</span><span>◆</span>
 </div>
+
+
+<div class="video-slideshow-container">
+  <button class="video-nav left" onclick="changeVideo(-1)">&#10094;</button>
+
+  <div class="video-wrapper">
+    <video class="video-slide" autoplay muted loop>
+      <source src="101demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <video class="video-slide" autoplay muted loop style="display: none;">
+      <source src="101facial.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <button class="video-nav right" onclick="changeVideo(1)">&#10095;</button>
+</div>
+
+<h1 class="testimonial-title">Photos</h1>
+<div class="decor">
+  <span>◆</span><span>◆</span><span>◆</span>
+</div>
+
+<section class="gallery-section">
+  <div class="dropdown">
+    <button class="dropbtn">Filter by ▼</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="filterImages(event, 'all')">All Images</a>
+      <a href="#" onclick="filterImages(event, 'haircuts')">Haircuts</a>
+      <a href="#" onclick="filterImages(event, 'shop')">Shop</a>
+      <a href="#" onclick="filterImages(event, 'facials')">Facials</a>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item all"><img src="haircut.jpg" alt="Haircut 1" /></div>
+    <div class="gallery-item haircuts"><img src="skinfade.jpg" alt="Fade 1" /></div>
+    <div class="gallery-item shop"><img src="outside101.png" alt="Shop 1" /></div>
+    <div class="gallery-item facials"><img src="facial3.png" alt="Facial 1" /></div>
+    <div class="gallery-item facials"><img src="facials3.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item shop"><img src="barbershop2.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item shop"><img src="barbershop3.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item facials"><img src="facial7.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item haircuts"><img src="kidscutting.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item haircuts"><img src="highschoolcut.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item haircuts"><img src="haircut9.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item facials"><img src="facials8.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item shop"><img src="haircutting101.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item shop"><img src="interior101.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item all"><img src="kidsoutside101.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item haircuts"><img src="haircut10.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item haircuts"><img src="haircut11.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item haircuts"><img src="haircut12.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item all"><img src="cuttinghair5.jpg" alt="Facial 1" /></div>
+    <div class="gallery-item all"><img src="kidsin101.jpg" alt="Facial 1" /></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="101barbers.png" alt="Company Logo" class="logo2">
+    </div>
+    <div class="social-media">
+      <h1>Connect With Us on Social Media</h1>
+      <p>Find Us Here:</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100063764222246" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/101barbers.a/" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Powered by Adrian Rahman</p>
+    <p><a href="#">Privacy Policy</a></p>
+    <p>All Rights Reserved © 2025</p>
+  </div>
+</footer>
+
+<script src="javascript.js"></script>
 </body>
 </html>
-
-
-<video width="520" height="440" autoplay muted loop>
-  <source src="101demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
